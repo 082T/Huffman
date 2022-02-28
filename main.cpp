@@ -18,6 +18,7 @@ int main()
 	print_tree(root, "", 0, "");
 	std::cout << std::endl;
 
+	std::cout << "Huffman code: " << std::endl;
 	std::cout << huffman_alg(input_string, root) << std::endl;
 
 	return 0;
