@@ -1,0 +1,2 @@
+# Huffman
+Huffman coding algorithm
