@@ -39,7 +39,7 @@ std::vector<pcd> count_probabilities(std::string user_input)
 	int len = user_input.length();
 	for (int i = 0; i < len; i++)
 	{
-		char a = tolower(user_input[i]);
+		char a = user_input[i];
 		std::vector<char>::iterator it;
 		for (it = letter_vector.begin(); it != letter_vector.end(); it++)
 		{
@@ -144,7 +144,7 @@ std::string huffman_alg(std::string user_input, Node* root)
 
 	for (int i = 0; i < user_input.length(); i++)
 	{
-		coded_string += character_value(tolower(user_input[i]), root, "");
+		coded_string += character_value(user_input[i], root, "");
 	}
 	return coded_string;
 }
